@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+
+    <h1>Hello, Flask!</h1>
+    <p>This is First <b>HTML</b> Code with Flask</p>
+    <p>My name is {{name}} and I am persuing {{cource}} from {{university}} </p>
+    
+    <br>
+    <h3>**** Conditional Statements : if else, elif ... ****</h3>
+
+    {% if age >= 18 %}
+        <p>You're an adult</p>
+
+    {% elif age >= 13 %}
+        <p>You're a teenager</p>
+
+    {% else %}
+        <p>You are a minor</p>
+
+    {% endif %}
+
+    <br>
+    <h3>**** FOR LOOP TESTING ****</h3>
+    
+    <!-- For loop  -->
+    {% for student in students %}
+        <p>{{ student }}</p>
+    {% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+
+    <link rel="stylesheet", href="{{ url_for('static', filename = 'style.css') }}">
+</head>
+<body>  
+
+    <h1>My Website</h1>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>            
+        <p>This is my footer</p>
+    </footer>
+
+    <img src="{{ url_for('static',filename='bablu.jpeg') }}" alt="bablu"> 
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
