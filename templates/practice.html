@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+</head>
+<body>
+
+        <h1>Learning Flask</h1>
+        <h4> ** using jinja2 in flask **</h4>
+        <br>
+        <h4> ** rendering dynamic data in flask **</h4>
+        <p>Name is {{name}} and enrollment : {{enrollment}}</p>
+        <br>
+        
+        {% for student in students %}
+            <li>{{student}}</li>
+        {% endfor %}
+
+</body>
+</html>
