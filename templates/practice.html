@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document Title</title>
+
+    <link rel="stylesheet", href="{{ url_for('static',filename ='practice2.css')}}">
 </head>
 <body>
 
@@ -40,5 +42,7 @@
                 <li> {{ item }}</li>
             {% endfor %}
         </ul>
+        <button id="helloButton">HELLO</button>
+    <script src="{{ url_for('static', filename ='script.js')}}" > </script>
 </body>
 </html>
